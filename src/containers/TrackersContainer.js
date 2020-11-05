@@ -1,4 +1,6 @@
 import React from 'react'
+import Trackers from '../components/Trackers'
+import TrackerForm from '../components/TrackerForm'
 
 
 class TrackersContainer extends React.Component {
@@ -7,7 +9,8 @@ class TrackersContainer extends React.Component {
     return (
       
       <div>
-        TrackersContainer
+        <TrackerForm/>
+        <Trackers/>
       </div>
 
 
