@@ -5,7 +5,7 @@ const Trackers = (props) => {
 
   return (
     <div>
-      {props.trackers.map(tracker => <li key={tracker.id}>{tracker.day} | {tracker.date} | {tracker.totalcal}</li> )}
+      {props.trackers.map(tracker => <li key={tracker.id}><strong>Day:</strong> {tracker.day} | <strong>Date:</strong> {tracker.date} | <strong>Total Calories:</strong> {tracker.totalcal}</li> )}
     </div>
 
   )
@@ -14,3 +14,5 @@ const Trackers = (props) => {
 }
 
 export default Trackers
+
+// 
