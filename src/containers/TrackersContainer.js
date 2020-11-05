@@ -17,7 +17,7 @@ class TrackersContainer extends React.Component {
       
       <div>
         <TrackerForm/>
-        <Trackers/>
+        <Trackers trackers={this.props.trackers}/>
       </div>
 
     )

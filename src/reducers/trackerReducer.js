@@ -1,7 +1,13 @@
 
 export default function trackerReducer(state = {trackers: []}, action) {
 
-  return state  
+  switch (action.type) {
+    case 'FETCH_TRACKERS':
+      return {trackers: action.payload} 
+  
+    default:
+      return state
 
+  } 
 
  }
