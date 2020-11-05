@@ -1,4 +1,6 @@
 import React from 'react'
+import {connect} from 'react-redux'
+import {addTracker} from '../actions/addTracker'
 
 
 class TrackerForm extends React.Component {
@@ -15,8 +17,9 @@ class TrackerForm extends React.Component {
     })
   }
 
-  handleSubmit = () => {
-    debugger;
+  handleSubmit = (event) => {
+    event.preventDefault()
+    this.props.addTracker(this.state)
   }
 
   render() {
@@ -43,4 +46,4 @@ class TrackerForm extends React.Component {
 
 }
 
-export default TrackerForm
+export default connect(null, {addTracker})(TrackerForm)
