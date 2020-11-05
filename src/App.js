@@ -1,21 +1,18 @@
 import React from 'react';
 import {connect} from 'react-redux'
-import {fetchTrackers} from './actions/fetchTrackers'
+import TrackersContainer from './containers/TrackersContainer'
+
 
 class App extends React.Component {
-
-  componentDidMount() {
-    this.props.fetchTrackers({type: 'FETCH_TRACKERS', payload: {day: 'Wednesday'}})
-  }  
 
   render() {
     return (
       <div className="App">
-        App
+        <TrackersContainer/> 
       </div>
     );
   }
   
 }
 
-export default connect(null, {fetchTrackers})(App);
+export default connect()(App);
