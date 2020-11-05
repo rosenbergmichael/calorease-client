@@ -5,7 +5,7 @@ const Trackers = (props) => {
 
   return (
     <div>
-      Trackers
+      {props.trackers.map(tracker => <li key={tracker.id}>{tracker.day} | {tracker.date} | {tracker.totalcal}</li> )}
     </div>
 
   )
