@@ -1,5 +1,6 @@
 import React from 'react'
 import {connect} from 'react-redux'
+import {addFood} from '../actions/addFood'
 
 
 class FoodForm extends React.Component {
@@ -17,7 +18,7 @@ class FoodForm extends React.Component {
 
   handleSubmit = (event) => {
     event.preventDefault()
-    
+    // addFood(this.state, this.props.id)
   }
 
 

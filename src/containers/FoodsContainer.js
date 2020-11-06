@@ -9,7 +9,7 @@ class FoodsContainer extends React.Component {
   render() {
     return (
       <div>
-        <FoodForm/>
+        <FoodForm tracker={this.props.tracker}/>
         <br/>
         <br/>
         <Foods foods={this.props.tracker &&  this.props.tracker.foods}/>
