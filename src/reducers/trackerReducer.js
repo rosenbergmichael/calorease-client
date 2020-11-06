@@ -15,6 +15,15 @@ export default function trackerReducer(state = {trackers: []}, action) {
         } 
       })
       return {...state, trackers: trackers}  
+    case 'DELETE_FOOD':
+      let trackerss = state.trackers.map(tracker => {
+        if (tracker.id === action.payload.id) {
+          return action.payload
+        } else {
+          return tracker 
+        } 
+      })
+      return {...state, trackers: trackerss}    
     default:
       return state
 
