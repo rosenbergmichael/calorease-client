@@ -11,6 +11,7 @@ class FoodsContainer extends React.Component {
       <div>
         <FoodForm/>
         <br/>
+        <br/>
         <Foods foods={this.props.tracker &&  this.props.tracker.foods}/>
       </div>
     )
