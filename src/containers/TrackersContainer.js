@@ -1,6 +1,6 @@
 import React from 'react'
 import {connect} from 'react-redux'
-import {Route} from 'react-router-dom'
+import {Route, Switch} from 'react-router-dom'
 import {fetchTrackers} from '../actions/fetchTrackers'
 import Trackers from '../components/Trackers'
 import Tracker from '../components/Tracker'
@@ -17,10 +17,11 @@ class TrackersContainer extends React.Component {
     return (
       
       <div>
-        <Route path='/trackers/new' component={TrackerForm}/>
-        <Route path='/trackers/:id' render={(routerProps) => <Tracker {...routerProps} trackers={this.props.trackers}/>} />
-        <Route exact path='/trackers' render={(routerProps ) => <Trackers {...routerProps} trackers={this.props.trackers}/> } />
-
+        <Switch>    
+          <Route path='/trackers/new' component={TrackerForm}/>
+          <Route path='/trackers/:id' render={(routerProps) => <Tracker {...routerProps} trackers={this.props.trackers}/>} />
+          <Route path='/trackers' render={(routerProps ) => <Trackers {...routerProps} trackers={this.props.trackers}/> } />
+        </Switch>
       </div>
 
     )

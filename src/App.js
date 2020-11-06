@@ -8,7 +8,7 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <h1>Welcome to Calorease- A simple app designed to help you keep track of your daily caloric intake with ease!</h1>
+        <h1>Calorease- A simple app designed to help you keep track of your daily caloric intake with ease!</h1>
         <br/>
         <TrackersContainer/> 
       </div>
