@@ -20,6 +20,11 @@ class TrackerForm extends React.Component {
   handleSubmit = (event) => {
     event.preventDefault()
     this.props.addTracker(this.state)
+    this.setState({
+      day: '', 
+      date: '', 
+      totalcal: 0
+    })
   }
 
   render() {
@@ -32,7 +37,7 @@ class TrackerForm extends React.Component {
            <br/>
            <br/>
            <label><strong>Date: </strong></label>
-           <input type='text' value={this.state.date} name="date" onChange={this.handleChange}/> 
+           <input type='text' placeholder='mm/dd/yyyy' value={this.state.date} name="date" onChange={this.handleChange}/> 
            <br/>
            <br/>
            <input type='submit'/>
