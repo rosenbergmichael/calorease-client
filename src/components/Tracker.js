@@ -6,6 +6,7 @@ import FoodsContainer from '../containers/FoodsContainer'
 const Tracker = (props) => {
 
   let tracker = props.trackers[props.match.params.id - 1]
+  // let tracker = props.trackers.filter(tracker => tracker.id === props.match.params.id)[0]
 
   return (
     <div>

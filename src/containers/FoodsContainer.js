@@ -10,6 +10,7 @@ class FoodsContainer extends React.Component {
     return (
       <div>
         <FoodForm/>
+        <br/>
         <Foods foods={this.props.tracker &&  this.props.tracker.foods}/>
       </div>
     )
