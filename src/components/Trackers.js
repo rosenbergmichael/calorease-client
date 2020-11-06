@@ -1,11 +1,13 @@
 import React from 'react'
+import Tracker from './Tracker'
 
 
 const Trackers = (props) => {
 
   return (
     <div>
-      {props.trackers.map(tracker => <li key={tracker.id}><strong>Day:</strong> {tracker.day} | <strong>Date:</strong> {tracker.date} | <strong>Total Calories:</strong> {tracker.totalcal}</li> )}
+      {props.trackers.map(tracker =>
+         <div key={tracker.id}><Tracker tracker={tracker}/></div> )}
     </div>
 
   )
@@ -15,4 +17,3 @@ const Trackers = (props) => {
 
 export default Trackers
 
-// 
