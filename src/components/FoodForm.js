@@ -18,7 +18,11 @@ class FoodForm extends React.Component {
 
   handleSubmit = (event) => {
     event.preventDefault()
-    // addFood(this.state, this.props.id)
+    this.props.addFood(this.state, this.props.tracker.id)
+    this.setState({
+      name: '', 
+      calories: ''
+    })
   }
 
 
@@ -44,4 +48,4 @@ class FoodForm extends React.Component {
 
 }
 
-export default connect(null)(FoodForm)
+export default connect(null, {addFood})(FoodForm)
