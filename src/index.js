@@ -6,6 +6,14 @@ import { Provider } from 'react-redux';
 import {BrowserRouter as Router} from 'react-router-dom'
 import trackerReducer from './reducers/trackerReducer'
 
+// import ThemeSwitcher from './ThemeSwitcher';
+// import 'bootstrap/dist/css/bootstrap.min.css';
+// import 'bootstrap/dist/css/bootstrap-theme.min.css';
+// import $ from 'jquery';
+// import Popper from 'popper.js';
+// import 'bootstrap/dist/js/bootstrap.bundle.min';
+import './style.css'
+
 import App from './App';
 
 

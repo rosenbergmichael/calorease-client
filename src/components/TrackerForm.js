@@ -25,6 +25,13 @@ class TrackerForm extends React.Component {
       date: '', 
       totalcal: 0
     })
+    // console.log(this.props)
+    // console.log(this.state)
+    // console.log(this)
+    // let tracker = props.trackers.filter(tracker => tracker.id === props.match.params.id)[0]
+
+    // redirect to tracker show page
+    this.props.history.push('/trackers');
   }
 
   render() {
