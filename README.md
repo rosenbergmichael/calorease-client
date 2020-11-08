@@ -7,9 +7,20 @@ Backend repo: https://github.com/rosenbergmichael/calorease-api
 
 ## Install Instructions
 
-Abcde
+To use this app, please follow below instructions:
 
-(From VinoVault: To use this app- just clone, run bundle install, run rake db:migrate, run 'rails s', and then in a web browser go to http://localhost:3000/ to begin!)
+Backend
+
+-Clone repo
+-Run bundle install
+-Run rake db:migrate
+-Run 'rails s'
+
+Frontend
+
+-Clone repo
+-Run npm install
+-Run npm start 
 
 
 ## Contributing
