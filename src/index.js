@@ -6,8 +6,6 @@ import { Provider } from 'react-redux'
 import {BrowserRouter as Router} from 'react-router-dom'
 import trackerReducer from './reducers/trackerReducer'
 
-// import './style.css'
-
 import App from './App';
 
 

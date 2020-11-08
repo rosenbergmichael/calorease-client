@@ -12,6 +12,4 @@ export const addFood = (food, trackerId) => {
     .then(tracker => dispatch({type: 'ADD_FOOD', payload: tracker}))
   }
 
-
-
 }

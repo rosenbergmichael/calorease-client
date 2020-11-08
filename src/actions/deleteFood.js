@@ -6,9 +6,6 @@ export const deleteFood = (foodId, trackerId) => {
     })
     .then(resp => resp.json())
     .then(tracker => dispatch({type: 'DELETE_FOOD', payload: tracker}))
-
   }
-
-
 
 }

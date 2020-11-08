@@ -13,12 +13,9 @@ const Trackers = (props) => {
            <Link to={`/trackers/${tracker.id}`}><strong>Day: </strong>{tracker.day} | <strong>Date: </strong>{tracker.date} | <strong>Calories: </strong>{tracker.totalcal}</Link>
          </li> )}
     </div>
-
   )
-
 
 }
 
-export default Trackers
 
-// 
+export default Trackers

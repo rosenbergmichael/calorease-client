@@ -3,6 +3,7 @@ import React from 'react'
 
 
 const HomePage = () => {
+
   return (
     <div className="HomePage">
       <h1>Calorease- A simple app designed to help you keep track of your daily caloric intake with ease!</h1>
@@ -11,6 +12,8 @@ const HomePage = () => {
     </div>
 
   )
+
 }
+
 
 export default HomePage

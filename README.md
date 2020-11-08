@@ -11,11 +11,11 @@ To use this app, please follow below instructions:
 
 Backend
 
--Clone repo, Run bundle install, Run rake db:migrate, Run 'rails s'
+-Clone repo, Run 'bundle install', Run 'rake db:migrate', Run 'rails s'
 
 Frontend
 
--Clone repo, Run npm install, Run npm start 
+-Clone repo, Run 'npm install', Run 'npm start'
 
 
 ## Contributing

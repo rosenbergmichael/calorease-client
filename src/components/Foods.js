@@ -15,10 +15,8 @@ const Foods = (props) => {
         <li key={food.id}>
            {food.name} - {food.calories} calories <button onClick={() => handleDelete(food)}>Remove</button>
         </li>
-
         )}
     </div>
-
   )
 
 

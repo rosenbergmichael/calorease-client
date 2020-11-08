@@ -26,7 +26,6 @@ export default function trackerReducer(state = {trackers: []}, action) {
       return {...state, trackers: trackerss}    
     default:
       return state
-
   } 
 
  }

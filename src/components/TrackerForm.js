@@ -1,6 +1,7 @@
 import React from 'react'
 import {connect} from 'react-redux'
 import {addTracker} from '../actions/addTracker'
+
 const weekdays = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
 
 
@@ -57,5 +58,6 @@ class TrackerForm extends React.Component {
 
 
 }
+
 
 export default connect(null, {addTracker})(TrackerForm)

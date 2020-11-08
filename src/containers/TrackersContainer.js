@@ -37,4 +37,5 @@ const mapStateToProps = state => {
   }
 }
 
+
 export default connect(mapStateToProps, {fetchTrackers})(TrackersContainer)

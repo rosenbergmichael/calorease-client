@@ -41,11 +41,10 @@ class FoodForm extends React.Component {
           <input type='submit' value='Add'/>
         </form>
       </div>
-
     )
-
   }
 
 }
+
 
 export default connect(null, {addFood})(FoodForm)
