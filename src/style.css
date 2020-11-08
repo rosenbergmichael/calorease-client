@@ -3,5 +3,17 @@ body {
   font-weight: 100;
   line-height: 1.3em;
   font-size: 1.1em;
-  background-color: rgb(155, 243, 174);
+  background-color: rgb(177, 247, 192);
+}
+
+.HomePage {
+  color: darkgreen;
+}
+
+.Tracker {
+  color: blue;
+}
+
+.NavBar {
+  font-size: 20px;
 }

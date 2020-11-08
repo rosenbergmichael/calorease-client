@@ -1,7 +1,7 @@
 import React from 'react'
 import FoodForm from '../components/FoodForm'
 import Foods from '../components/Foods'
-import trackerReducer from '../reducers/trackerReducer'
+// import trackerReducer from '../reducers/trackerReducer'
 
 
 class FoodsContainer extends React.Component {

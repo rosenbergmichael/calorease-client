@@ -6,11 +6,11 @@ import Tracker from './Tracker'
 const Trackers = (props) => {
 
   return (
-    <div>
+    <div className="Trackers">
       <h2>All Entries</h2>
       {props.trackers.map(tracker =>
          <li key={tracker.id}>
-           <Link to={`/trackers/${tracker.id}`} ><strong>Day: </strong>{tracker.day} | <strong>Date: </strong>{tracker.date} | <strong>Calories: </strong>{tracker.totalcal}</Link>
+           <Link to={`/trackers/${tracker.id}`}><strong>Day: </strong>{tracker.day} | <strong>Date: </strong>{tracker.date} | <strong>Calories: </strong>{tracker.totalcal}</Link>
          </li> )}
     </div>
 

@@ -1,6 +1,7 @@
 import React from 'react'
 import {connect} from 'react-redux'
 import {addTracker} from '../actions/addTracker'
+const weekdays = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
 
 
 class TrackerForm extends React.Component {
@@ -19,38 +20,37 @@ class TrackerForm extends React.Component {
 
   handleSubmit = (event) => {
     event.preventDefault()
-    this.props.addTracker(this.state)
+    const date = new Date(this.state.date)
+    this.props.addTracker({...this.state, day: weekdays[date.getDay()], date: date })
+    .then( (tracker) => {
+      this.props.history.push(`/trackers/${tracker.id}`)
+    })    
     this.setState({
       day: '', 
       date: '', 
       totalcal: 0
     })
-    // console.log(this.props)
-    // console.log(this.state)
-    // console.log(this)
-    // let tracker = props.trackers.filter(tracker => tracker.id === props.match.params.id)[0]
-
-    // redirect to tracker show page
-    this.props.history.push('/trackers');
   }
 
   render() {
+
+    const day = weekdays[new Date(this.state.date).getDay()];
+    
     return (
       <div>
          <form onSubmit={this.handleSubmit}>
            <h2>Fill out below form to create a new entry!</h2>
-           <label><strong>Day: </strong></label>
-           <input type='text' value={this.state.day} name="day" onChange={this.handleChange}/>
+           
            <br/>
            <br/>
            <label><strong>Date: </strong></label>
-           <input type='text' placeholder='mm/dd/yyyy' value={this.state.date} name="date" onChange={this.handleChange}/> 
+           <input type='date'  value={this.state.date} name="date" onChange={this.handleChange}/> 
+           <p><strong>Day: </strong>{day}</p>
            <br/>
            <br/>
            <input type='submit'/>
          </form>
       </div>
-
     )
 
   }
