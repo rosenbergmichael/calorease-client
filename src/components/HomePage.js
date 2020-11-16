@@ -10,7 +10,6 @@ const HomePage = (props) => {
       <h3>Use the above menu to create a new entry or view all entries</h3>
       <br/>
       <h3>Most Recent Entry:</h3>
-      
       <p>{console.log(props.trackers.slice(-1))}</p>
       <p>{props.trackers.slice(-1).map(t =>
         <li key={t.id}>

@@ -19,7 +19,6 @@ class TrackersContainer extends React.Component {
     return (
       <div>
         <NavBar/>
-        {/* <HomePage/> */}
           <Switch>    
             <Route path='/trackers/new' component={TrackerForm}/>
             <Route path='/trackers/:id' render={(routerProps) => <Tracker {...routerProps} trackers={this.props.trackers}/>}/>
