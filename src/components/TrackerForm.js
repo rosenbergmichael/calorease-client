@@ -31,7 +31,8 @@ class TrackerForm extends React.Component {
       date: '', 
       totalcal: 0
     })
-  }
+  }  
+  
 
   render() {
 
@@ -41,7 +42,6 @@ class TrackerForm extends React.Component {
       <div>
          <form onSubmit={this.handleSubmit}>
            <h2>Fill out below form to create a new entry!</h2>
-           
            <br/>
            <br/>
            <label><strong>Date: </strong></label>

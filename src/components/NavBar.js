@@ -11,6 +11,8 @@ const NavBar = (props) => {
       <strong><Link to='/trackers'>View All</Link></strong>
       <br></br>
       <strong><Link to='/trackers/new'>Create</Link></strong>
+      <br></br>
+      <strong><Link to='/mostrecent'>Most Recent Entry</Link></strong>
     </div>
   )
 

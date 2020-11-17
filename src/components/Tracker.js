@@ -1,7 +1,6 @@
 import React from 'react'
-import {Redirect} from 'react-router-dom'
-
 import FoodsContainer from '../containers/FoodsContainer'
+
 
 const Tracker = (props) => {
 

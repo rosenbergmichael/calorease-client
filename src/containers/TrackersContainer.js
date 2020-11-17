@@ -7,6 +7,7 @@ import Tracker from '../components/Tracker'
 import TrackerForm from '../components/TrackerForm'
 import HomePage from '../components/HomePage'
 import NavBar from '../components/NavBar'
+import MostRecent from '../components/MostRecent'
 
 
 class TrackersContainer extends React.Component {
@@ -23,6 +24,7 @@ class TrackersContainer extends React.Component {
             <Route path='/trackers/new' component={TrackerForm}/>
             <Route path='/trackers/:id' render={(routerProps) => <Tracker {...routerProps} trackers={this.props.trackers}/>}/>
             <Route path='/trackers' render={(routerProps) => <Trackers {...routerProps} trackers={this.props.trackers}/>}/>
+            <Route path='/mostrecent' render={(routerProps) => <MostRecent {...routerProps} trackers={this.props.trackers}/>}/>
             <Route path='/' render={(routerProps) => <HomePage {...routerProps} trackers={this.props.trackers}/>}/>
           </Switch>
       </div>
