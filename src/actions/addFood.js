@@ -1,7 +1,9 @@
+import { BASE_URL } from "./api.js"
+
 export const addFood = (food, trackerId) => {
 
   return (dispatch) => {
-    fetch(`http://localhost:3000/api/v1/trackers/${trackerId}/foods`, {
+    fetch(`${BASE_URL}/trackers/${trackerId}/foods`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json '

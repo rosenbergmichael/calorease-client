@@ -1,7 +1,9 @@
+import { BASE_URL } from "./api.js"
+
 export const deleteFood = (foodId, trackerId) => {
 
   return (dispatch) => {
-    return fetch(`http://localhost:3000/api/v1/trackers/${trackerId}/foods/${foodId}`, {
+    return fetch(`${BASE_URL}/trackers/${trackerId}/foods/${foodId}`, {
       method: 'DELETE'
     })
     .then(resp => resp.json())

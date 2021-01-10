@@ -1,7 +1,9 @@
+import { BASE_URL } from "./api.js"
+
 export const addTracker = (data) => {
 
   return (dispatch) => {
-    return fetch('http://localhost:3000/api/v1/trackers', {
+    return fetch(`${BASE_URL}/trackers`, {
       headers: {
          'Content-Type': 'application/json',
          'Accept': 'application/json'

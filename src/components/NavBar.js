@@ -6,13 +6,14 @@ const NavBar = (props) => {
 
   return (
     <div className="NavBar">
-      <strong><Link to='/'>Home</Link></strong> 
-      <br></br> 
-      <strong><Link to='/trackers'>View All</Link></strong>
-      <br></br>
-      <strong><Link to='/trackers/new'>Create</Link></strong>
-      <br></br>
-      <strong><Link to='/mostrecent'>Most Recent Entry</Link></strong>
+      <header><img src="https://betsysbest.com/wp-content/uploads/2019/09/food-cost-calculation-for-a-restaurant-1080x675.jpg"></img> 
+        <ul>
+          <li><Link to='/'>Home</Link></li>
+          <li><Link to='/trackers'>View All</Link></li>
+          <li><Link to='/trackers/new'>Create</Link></li>
+          <li><Link to='/mostrecent'>Most Recent Entry</Link></li>
+        </ul>
+      </header>
     </div>
   )
 

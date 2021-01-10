@@ -1,17 +1,24 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
+import FoodsContainer from '../containers/FoodsContainer'
+
 
 
 const MostRecent = (props) => {
 
   return (
     <div className="MostRecent">
-      <h3>Most Recent Entry:</h3>
-      <p>{console.log(props.trackers.slice(-1))}</p>
+      <br></br>
+      <br></br>
+      <h2>Most Recent Entry:</h2>
+      <br></br>
       <p>{props.trackers.slice(-1).map(t =>
-        <li key={t.id}>
-          <Link to={`/trackers/${t.id}`}><strong>Day: </strong>{t.day} | <strong>Date: </strong>{t.date} | <strong>Calories: </strong>{t.totalcal}</Link>
-        </li>
+        <h3 key={t.id}>
+          <strong>Day: </strong>{t.day} | <strong>Date: </strong>{t.date} | <strong>Total Calories: </strong>{t.totalcal}
+          <br></br>
+          <br></br>
+          <FoodsContainer tracker={t}/>
+        </h3>
         )}
       </p>
     </div>
