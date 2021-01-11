@@ -16,7 +16,7 @@ const Foods = (props) => {
   }
 
   return (
-    <div>
+    <div className="Foods">
       {props.foods && props.foods.map(food => 
         <li key={food.id}>
            {food.name} - {food.calories} calories <button onClick={() => handleDelete(food)}>Remove</button>
