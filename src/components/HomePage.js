@@ -6,6 +6,7 @@ const HomePage = (props) => {
 
   return (
     <div className="HomePage">
+      <br></br>
       <h1>Calorease- Keep track of your daily caloric intake with ease!</h1>
       <br/>
       <h3>Most Recent Entry:</h3>

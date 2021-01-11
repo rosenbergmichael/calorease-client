@@ -11,21 +11,35 @@ body {
 }
 
 .HomePage {
-  color: gray;
+  color: rgb(245, 148, 83);
 }
 
 .Tracker {
-  color: darkgreen;
+  color: rgb(245, 148, 83);
 }
+
+.Trackers {
+  color: rgb(245, 148, 83);
+}
+
+.TrackerForm {
+  color: rgb(245, 148, 83);
+}
+
+.MostRecent {
+  color: rgb(245, 148, 83);
+}
+
 
 .NavBar {
   background-color: white;
   position: fixed;
-  top: 0;
+  top: 0px;
   left: 0;
   right: 0;
   height: 80px;
   font-size: 20px;
+  padding: 20px;
   display: flex;
   box-shadow: 0 0 25px 0 black;
 }
@@ -44,12 +58,13 @@ header * {
 
 
 header li {
-  margin: 20px;
+  margin: 50px;
   text-align: center;
   align-items: center;
 }
 
 header li a {
-  color: black;
+  color: darkgreen;
+  font-weight: bold;
   text-decoration: none;
 }

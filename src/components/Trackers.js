@@ -7,6 +7,7 @@ const Trackers = (props) => {
 
   return (
     <div className="Trackers">
+      <br></br>
       <h2>All Entries</h2>
       {props.trackers.map(tracker =>
          <li key={tracker.id}>

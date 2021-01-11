@@ -9,7 +9,6 @@ const MostRecent = (props) => {
   return (
     <div className="MostRecent">
       <br></br>
-      <br></br>
       <h2>Most Recent Entry:</h2>
       <br></br>
       <p>{props.trackers.slice(-1).map(t =>

@@ -39,8 +39,9 @@ class TrackerForm extends React.Component {
     const day = weekdays[new Date(this.state.date).getDay()];
     
     return (
-      <div>
+      <div className="TrackerForm">
          <form onSubmit={this.handleSubmit}>
+           <br></br>
            <h2>Fill out below form to create a new entry!</h2>
            <br/>
            <br/>
