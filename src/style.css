@@ -60,10 +60,6 @@ h1 {
   font-size: 60px;
 }
 
-.MostRecent h3{
-  color: darkgreen;
-}
-
 .Foods li{
   color: rgb(248, 112, 21);
 }
@@ -84,6 +80,10 @@ h3 {
 }
 
 h4 {
+  color: darkgreen;
+}
+
+label {
   color: darkgreen;
 }
 
