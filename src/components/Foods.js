@@ -1,15 +1,12 @@
 import React from 'react'
 import {connect} from 'react-redux'
 import {deleteFood} from '../actions/deleteFood'
-// import AddUpvote from './AddUpvote'
+
 
 
 
 const Foods = (props) => {
 
-  // state = {
-  //   number: 0
-  // }
 
   const handleDelete = (food) => {
     props.deleteFood(food.id, food.tracker_id)
@@ -20,8 +17,6 @@ const Foods = (props) => {
       {props.foods && props.foods.map(food => 
         <li key={food.id}>
            {food.name} - {food.calories} calories <button onClick={() => handleDelete(food)}>Remove</button>
-
-           {/* <AddUpvote/> */}
            <p></p>
         </li>
         )}
