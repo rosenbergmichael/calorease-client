@@ -8,6 +8,7 @@ const Tracker = (props) => {
 
   return (
     <div className="Tracker">
+      <br></br>
       <h2>
         <strong>Day: </strong>{tracker ? tracker.day : null} | <strong>Date: </strong>{tracker ? tracker.date : null} | <strong>Total Calories: </strong>{tracker ? tracker.totalcal : null}
       </h2>
