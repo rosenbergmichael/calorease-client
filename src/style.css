@@ -21,7 +21,7 @@ body {
   line-height: 1.3em;
   font-size: 1.1em;
   background-color: #ffffff;
-  margin-top: 80px;
+  /* margin-top: 10px; */
   padding: 30px;
 }
 
@@ -54,7 +54,7 @@ body {
   right: 0;
   height: 100px;
   font-size: 20px;
-  padding: 20px;
+  padding: 25px;
   display: flex;
   box-shadow: 0 0 25px 0 black;
   text-transform: uppercase;
@@ -62,11 +62,27 @@ body {
 }
 
 .NavBar ul li a:hover {
-  color: #333333;
+  background-color: #333333;
+  color: white;
   text-decoration: none;
   transition: all 0.2s ease-in-out;
   transform: scale(0.8);
   background: transparent;
+}
+
+.NavBar ul li a {
+  background-color: white;
+  border-radius: 5px;
+  padding: 7px;
+}
+
+.NavBar ul {
+  text-align: center;
+}
+
+.NavBar ul li {
+  display: inline-block;
+  margin-left: -5px;
 }
 
 .HomePage ul li a {
@@ -77,12 +93,6 @@ body {
   text-decoration: none;
 }
 
-.NavBar img {
-  width: 140px;
-  height: 100px;
-  margin-right: 20px;
-  padding: 5px;
-}
 
 header * {
   display: inline;
@@ -121,9 +131,30 @@ label {
 
 header li {
   margin: 35px;
-  text-align: center;
-  align-items: center;
-  box-shadow: 5px 5px rgb(223, 243, 149);
+  border-radius: 20px;
+  /* box-shadow: 5px 5px rgb(230, 241, 189); */
+}
+
+.NavBar {
+  background-image: url('./images/caloreasecover.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 150px;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  height: 100%;
+  right: 0;
+  bottom: 0;
+  padding: 0 !important;
+  margin: 0 !important;
+  background-color: rgba(10, 10, 10, 0.3);
 }
 
 header li a {
