@@ -12,7 +12,6 @@ const HomePage = (props) => {
       <br/>
       <br/>
       <br/>
-      <br/>
       <h2>Most Recent Entry:</h2>
       <p>{console.log(props.trackers.slice(-1))}</p>
       <p>{props.trackers.slice(-1).map(t =>

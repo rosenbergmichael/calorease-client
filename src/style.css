@@ -1,3 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+li {
+  text-decoration: none;
+  list-style-type: circle;
+}
+
+/* ul {
+  list-style-type: square;
+} */
+
 body {
   height: 125vh;
   background-size: cover;
@@ -5,14 +20,13 @@ body {
   font-weight: 100;
   line-height: 1.3em;
   font-size: 1.1em;
-  background-color: rgb(230, 243, 183);
+  background-color: #ffffff;
   margin-top: 80px;
   padding: 30px;
 }
 
 .HomePage {
   color: rgb(248, 112, 21);
-  
 }
 
 .Tracker {
@@ -23,8 +37,8 @@ body {
   color: rgb(248, 112, 21);
 }
 
-.TrackerForm {
-  color: rgb(248, 112, 21);
+.TrackerForm p{
+  color: darkgreen;
 }
 
 .MostRecent {
@@ -38,17 +52,36 @@ body {
   top: 0px;
   left: 0;
   right: 0;
-  height: 80px;
+  height: 100px;
   font-size: 20px;
   padding: 20px;
   display: flex;
   box-shadow: 0 0 25px 0 black;
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
 }
 
-header img {
-  height: 85px;
-  border-radius: 20px;
-  margin-left: 730px;
+.NavBar ul li a:hover {
+  color: #333333;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+  transform: scale(0.8);
+  background: transparent;
+}
+
+.HomePage ul li a {
+  text-decoration: none;
+}
+
+.Trackers li a {
+  text-decoration: none;
+}
+
+.NavBar img {
+  width: 140px;
+  height: 100px;
+  margin-right: 20px;
+  padding: 5px;
 }
 
 header * {
@@ -69,7 +102,6 @@ h1 {
   color: rgb(248, 112, 21);
   text-decoration: none;
 }
-
 
 h2 {
   color: darkgreen;

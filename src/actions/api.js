@@ -1,1 +1,2 @@
-export const BASE_URL = "https://calorease-rails-api.herokuapp.com/api/v1"
+export const BASE_URL = "http://localhost:3001/api/v1"
+

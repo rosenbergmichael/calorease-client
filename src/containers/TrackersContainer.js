@@ -13,9 +13,7 @@ import MostRecent from '../components/MostRecent'
 class TrackersContainer extends React.Component {
 
   componentDidMount() {
-    console.log("a")
     this.props.fetchTrackers()
-    console.log("b")
   }
 
   render() {
