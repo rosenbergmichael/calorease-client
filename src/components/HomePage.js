@@ -11,6 +11,9 @@ const HomePage = (props) => {
       <h3><i>Keep track of your daily caloric intake with ease!</i></h3>
       <br/>
       <br/>
+      <h2>
+      <Link to={`/trackers/new`}>Create New Entry</Link>
+      </h2>
       <br/>
       <h2>Most Recent Entry:</h2>
       <p>{console.log(props.trackers.slice(-1))}</p>
