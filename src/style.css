@@ -88,6 +88,11 @@ body {
 
 .HomePage ul li a {
   text-decoration: none;
+  list-style: none;
+}
+
+.HomePage li {
+  list-style: none;
 }
 
 .Trackers li a {
