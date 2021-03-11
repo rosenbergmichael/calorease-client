@@ -14,7 +14,11 @@ const MostRecent = (props) => {
       <p>{props.trackers.slice(-1).map(t =>
         <h3 key={t.id}>
           {t.day}, {t.date}
-          <h4><strong>Total Calories: </strong>{t.totalcal}</h4>
+          <br/>
+          <br/>
+          <strong>Total Calories: </strong>{t.totalcal}
+          <br/>
+          <br/>
           <br/>
           <FoodsContainer tracker={t}/>
         </h3>

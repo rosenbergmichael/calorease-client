@@ -9,10 +9,10 @@ const Trackers = (props) => {
     <div className="Trackers">
       <br></br>
       <h2>All Entries</h2>
+      <br/>
       {props.trackers.map(tracker =>
          <li key={tracker.id}>
            <Link to={`/trackers/${tracker.id}`}>{tracker.day}, {tracker.date} ( <strong>Calories: </strong>{tracker.totalcal} )</Link>
-           {/* <Link to={`/trackers/${tracker.id}`}><strong>Day: </strong>{tracker.day} | <strong>Date: </strong>{tracker.date} | <strong>Calories: </strong>{tracker.totalcal}</Link> */}
          </li> )}
     </div>
   )

@@ -12,9 +12,9 @@ const Tracker = (props) => {
       <h2>
         {tracker ? tracker.day : null}, {tracker ? tracker.date : null}
       </h2>
-      <h2>
+      <h3>
         <strong>Total Calories: </strong>{tracker ? tracker.totalcal : null}
-      </h2>
+      </h3>
       <br/>
       <FoodsContainer tracker={tracker}/>
     </div>
