@@ -7,13 +7,15 @@ const HomePage = (props) => {
   return (
     <div className="HomePage">
       <br></br>
-      <h1><i><u>Calorease</u></i></h1>
+      <h1><i>Calorease</i></h1>
       <h3><i>Keep track of your daily caloric intake with ease!</i></h3>
       <br/>
       <br/>
+      <div className="HomePageCreate">
       <h2>
-      <Link to={`/trackers/new`}>Create New Entry</Link>
+      <Link to={`/trackers/new`}>Click to Create New Entry</Link>
       </h2>
+      </div>
       <br/>
       <h2>Most Recent Entry:</h2>
       <p>{console.log(props.trackers.slice(-1))}</p>

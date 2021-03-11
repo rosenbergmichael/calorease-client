@@ -9,10 +9,6 @@ li {
   list-style-type: circle;
 }
 
-/* ul {
-  list-style-type: square;
-} */
-
 body {
   height: 125vh;
   background-size: cover;
@@ -95,6 +91,10 @@ body {
   list-style: none;
 }
 
+.HomePageCreate h2 a {
+  /* color: rgb(248, 112, 21); */
+}
+
 .HomePage li a {
   color: rgb(248, 112, 21);
 }
@@ -107,13 +107,9 @@ body {
 .HomePage h2 a {
   text-decoration: none;
   color: darkgreen;
-  /* background-color: #333333; */
-  /* color: white; */
   text-decoration: none;
   transition: all 0.2s ease-in-out;
   transform: scale(0.8);
-  /* background: transparent; */
-
 }
 
 .HomePage h2 a:hover {
@@ -125,20 +121,18 @@ body {
   text-decoration: none;
 }
 
-
 header * {
   display: inline;
   align-items: center;
 }
 
 h1 {
-  font-size: 60px;
+  font-size: 90px;
 }
 
 .Foods li{
   color: rgb(248, 112, 21);
 }
-
 
 .Trackers li{
   color: rgb(248, 112, 21);
@@ -164,7 +158,6 @@ label {
 header li {
   margin: 35px;
   border-radius: 20px;
-  /* box-shadow: 5px 5px rgb(230, 241, 189); */
 }
 
 .NavBar {
